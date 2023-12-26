@@ -9,7 +9,13 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react', 'prettier', '@typescript-eslint', "import", "unused-imports"],
+  plugins: [
+    'react',
+    'prettier',
+    '@typescript-eslint',
+    'import',
+    'unused-imports',
+  ],
   rules: {
     'no-console': 'error',
     'no-var': 'error',
@@ -48,25 +54,25 @@ module.exports = {
       },
     ],
   },
-	"import/order": [
-      "warn",
-      {
-        groups: [
-          "index",
-          "sibling",
-          "parent",
-          "internal",
-          "external",
-          "builtin",
-          "object",
-          "type",
-        ],
-      },
-    ],
-		"unused-imports/no-unused-imports": "error",
-    "import/newline-after-import": ["error", { count: 1 }],
-    "padding-line-between-statements": [
-      "error",
-      { blankLine: "always", prev: "const", next: "return" },
-    ],
+  'import/order': [
+    'warn',
+    {
+      groups: [
+        'index',
+        'sibling',
+        'parent',
+        'internal',
+        'external',
+        'builtin',
+        'object',
+        'type',
+      ],
+    },
+  ],
+  'unused-imports/no-unused-imports': 'error',
+  'import/newline-after-import': ['error', { count: 1 }],
+  'padding-line-between-statements': [
+    'error',
+    { blankLine: 'always', prev: 'const', next: 'return' },
+  ],
 };
